@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ChatSphere</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+    }
+
+    h1 {
+      color: #4a90e2;
+      margin-top: 30px;
+    }
+
+    input {
+      padding: 10px;
+      width: 300px;
+      border-radius: 5px;
+      border: 1px solid #4a90e2;
+      background: #111;
+      color: #fff;
+    }
+
+    button {
+      padding: 10px;
+      background: #4a90e2;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #111;
+      margin: 10px auto;
+      width: 300px;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ChatSphere 💬</h1>
+
+  <form method="POST">
+    <input type="text" name="message" placeholder="Enter message..." required>
+    <button type="submit">Send</button>
+  </form>
+
+  <ul>
+    {% for msg in messages %}
+      <li>{{ msg }}</li>
+    {% endfor %}
+  </ul>
+
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+  <title>ChatSphere</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+    }
+
+    h1 {
+      color: #4a90e2;
+      margin-top: 30px;
+    }
+
+    input {
+      padding: 10px;
+      width: 300px;
+      border-radius: 5px;
+      border: 1px solid #4a90e2;
+      background: #111;
+      color: #fff;
+    }
+
+    button {
+      padding: 10px;
+      background: #4a90e2;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #111;
+      margin: 10px auto;
+      width: 300px;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ChatSphere 💬</h1>
+
+  <form method="POST">
+    <input type="text" name="message" placeholder="Enter message..." required>
+    <button type="submit">Send</button>
+  </form>
+
+  <ul>
+    {% for msg in messages %}
+      <li>{{ msg }}</li>
+    {% endfor %}
+  </ul>
+
+</body>
+</html>
